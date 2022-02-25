@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchContainer {
+    display: flex;
+}
+
+.searchBtn {
+    width: 50px;
+}
+
+.weatherDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.currentWeatherContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forcast {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.forcastDayCard {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.forcastWeather {
+    display: flex;
+    gap: 5px;
+}
