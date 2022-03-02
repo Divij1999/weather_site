@@ -184,6 +184,7 @@ const handleWeatherData = (() => {
   header.searchBtn.addEventListener('click', () => {
     getLocationData(false, header.searchBar.value);
     clearSearchBar();
+    removeSearchOptions();
   });
 
   // Listening for user to press enter when focus is on the search bar
