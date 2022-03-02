@@ -7,6 +7,7 @@ const top = (() => {
 
   const searchBar = document.createElement('input');
   searchBar.classList.add('locationInput');
+  searchBar.setAttribute('placeholder', 'Enter city name, city code or zip code');
 
   const searchBtn = document.createElement('button');
   searchBtn.classList.add('searchBtn');
