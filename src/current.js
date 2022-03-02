@@ -8,11 +8,19 @@ const middle = (() => {
   const tempDiv = document.createElement('div');
   tempDiv.classList.add('currentTemp');
 
+  const locationName = document.createElement('div');
+  locationName.classList.add('locationName');
+
+  const humidity = document.createElement('div');
+  humidity.classList.add('currentHumidity');
+
   const descriptionDiv = document.createElement('div');
   descriptionDiv.classList.add('weatherDesc');
 
   weatherDiv.appendChild(tempDiv);
+  weatherDiv.appendChild(locationName);
   weatherDiv.appendChild(descriptionDiv);
+  weatherDiv.appendChild(humidity);
 
   currentWeatherContainer.appendChild(weatherDiv);
 
@@ -22,6 +30,8 @@ const middle = (() => {
   return {
     tempDiv,
     descriptionDiv,
+    locationName,
+    humidity,
   };
 })();
 

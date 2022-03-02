@@ -7,46 +7,124 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    align-items: center;
+    background-color: black;
+    color: white;
 }
 
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .searchContainer {
     display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.locationInput {
+    flex-grow: 1;
+}
+
+.searchOptions {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+    position: relative;
+    cursor: default;
+}
+
+.searchOption:hover {
+    background-color: rgb(70, 69, 69);
 }
 
 .searchBtn {
-    width: 50px;
+    background-color: black;
+    border: 0;    
+    color: white;
+    font-size: 1.1em;
+}
+
+.searchBtn:hover {
+    background-color: rgb(70, 69, 69);
 }
 
 .weatherDiv {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
 }
 
 .currentWeatherContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    flex-grow: 3;
+}
+
+.currentTemp {
+    font-size: 4.5em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.degreeSign {
+    vertical-align: 60%;
+    font-size: 0.7em;
+}
+
+.weatherDesc {
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .forcast {
     display: flex;
     padding: 20px;
-    gap: 20px;
+    gap: 30px;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
 }
 
 .forcastDayCard {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: center;
+    width: 12vw;
+    font-size: 1.1em;
+    padding: 5px;
+    border-right: 1px solid white;
 }
 
 .forcastWeather {
     display: flex;
-    gap: 5px;
+    gap: 20px;
+    align-items: center;
+}
+
+.forcastTemp {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+
+div[data-key='6'] {
+    border: 0;
 }

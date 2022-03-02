@@ -22,8 +22,14 @@ const bottom = (() => {
     weather.appendChild(weatherIcon);
     weather.appendChild(weatherDescription);
 
+    const minTemp = document.createElement('div');
+    const maxTemp = document.createElement('div');
+
     const temp = document.createElement('div');
     temp.classList.add('forcastTemp');
+
+    temp.appendChild(minTemp);
+    temp.appendChild(maxTemp);
 
     dayCard.appendChild(date);
     dayCard.appendChild(weather);
